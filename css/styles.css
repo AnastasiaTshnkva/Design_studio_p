@@ -14,11 +14,13 @@ body {
 }
 
 button {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0px 25px 0px 25px;
   border: 1px solid;
   border-radius: 15px;
+  font-size: 17px;
+  line-height: 25px;
   cursor: pointer;
+  background-color: var(--background-color);
 }
 button:hover {
   box-shadow: 3px 5px 4px var(--shadow-color);
@@ -67,4 +69,62 @@ a {
   font-size: 42px;
   line-height: 48px;
   letter-spacing: 15px;
+}
+
+.artifacts {
+  margin: 100px 70px 50px 70px;
+}
+.artifacts .artifacts__title {
+  display: block;
+  margin-bottom: 70px;
+  font-family: "Roboto";
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 300;
+  max-width: 745px;
+}
+.artifacts .artifacts__button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.about {
+  margin: 0 70px 50px 70px;
+}
+.about .about__img {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.about .about__img .about__img--item {
+  padding: 5px;
+  width: 30%;
+  margin-bottom: 70px;
+}
+.about .about__img .about__img--bottom {
+  width: 40%;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+.about .about__text--paragraf {
+  margin-top: 20px;
+}
+.about .about__text--button {
+  margin-top: 20px;
+}
+
+.manifesto {
+  margin: 70px;
+}
+.manifesto .manifesto__paragraf {
+  display: block;
+  text-align: center;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.manifesto .manifesto__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }/*# sourceMappingURL=styles.css.map */
