@@ -127,4 +127,8 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+.projects {
+  height: 100px;
 }/*# sourceMappingURL=styles.css.map */
