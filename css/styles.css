@@ -13,7 +13,7 @@ body {
   color: var(--text-color);
 }
 
-button {
+.button {
   padding: 0px 25px 0px 25px;
   border: 1px solid;
   border-radius: 15px;
@@ -22,11 +22,22 @@ button {
   cursor: pointer;
   background-color: var(--background-color);
 }
-button:hover {
+.button:hover {
   box-shadow: 3px 5px 4px var(--shadow-color);
 }
-button:active {
+.button:active {
   background-color: var(--shadow-color);
+}
+
+.title, h1 {
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 400;
+}
+
+.container {
+  margin: 70px;
 }
 
 a {
@@ -77,9 +88,7 @@ a {
 .artifacts .artifacts__title {
   display: block;
   margin-bottom: 70px;
-  font-family: "Roboto";
   font-size: 72px;
-  line-height: 80px;
   font-weight: 300;
   max-width: 745px;
 }
@@ -89,7 +98,7 @@ a {
 }
 
 .about {
-  margin: 0 70px 50px 70px;
+  margin-bottom: 50px;
 }
 .about .about__img {
   display: flex;
@@ -114,21 +123,80 @@ a {
 }
 
 .manifesto {
-  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .manifesto .manifesto__paragraf {
   display: block;
   text-align: center;
   max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .manifesto .manifesto__main {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  align-items: center;
+  margin-top: 80px;
+  min-width: 100%;
+}
+.manifesto .manifesto__main .manifesto__main--img--top {
+  align-self: flex-start;
+}
+.manifesto .manifesto__main .manifesto__main--img--bottom {
+  align-self: flex-end;
+}
+.manifesto .manifesto__button {
+  margin-top: 70px;
 }
 
 .projects {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .projects__title {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.projects .projects__paragraf {
+  max-width: 850px;
+  margin-top: 25px;
+}
+.projects .projects__list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .projects__list .projects__list--item {
+  max-width: 30%;
+}
+.projects .projects__list .projects__list--item .projects__list--item--paragraf {
+  margin-top: 15px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.services .services__list .services__list--item {
+  margin: 50px 10px 0 10px;
+  max-width: 320px;
+}
+.services .services__list .services__list--item .services__list--item--title {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.services .services__paragraf {
+  margin-top: 70px;
+}
+.services .services__button {
+  margin-top: 40px;
 }/*# sourceMappingURL=styles.css.map */
