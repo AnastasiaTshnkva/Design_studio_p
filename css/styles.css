@@ -199,4 +199,9 @@ a {
 }
 .services .services__button {
   margin-top: 40px;
+}
+
+.novelties .novelties__top {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */
