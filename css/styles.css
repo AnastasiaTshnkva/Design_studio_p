@@ -204,4 +204,34 @@ a {
 .novelties .novelties__top {
   display: flex;
   justify-content: space-between;
+}
+.novelties .novelties__top .novelties__top-button {
+  background-color: var(--background-color);
+  font-size: 25px;
+  font-weight: 200;
+  border: solid 1px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.novelties .novelties__top .novelties__top-button:hover {
+  box-shadow: 3px 5px 4px var(--shadow-color);
+}
+.novelties .novelties__top .novelties__top-button:active {
+  background-color: var(--shadow-color);
+}
+.novelties .novelties__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+.novelties .novelties__list .novelties__list--item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.novelties .novelties__list .novelties__list--item .novelties__list--item--name {
+  font-family: "Roboto";
+  width: 100%;
+  margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
