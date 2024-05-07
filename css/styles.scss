@@ -4,6 +4,7 @@
   --shadow-color: #F4EDE6;
   --background-image: "./img/mainBaner.png";
   --hr-color:#0b080523;
+  --max-width-of-container: 1100px;
 }
 
 body {
@@ -40,7 +41,10 @@ body {
 }
 
 .container {
-  margin: 70px;
+  margin: 10px;
+  max-width: var(--max-width-of-container);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -48,10 +52,17 @@ a {
   color: var(--text-color);
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  max-width: var(--max-width-of-container);
+  margin-left: auto;
+  margin-right: auto;
 
   .header__nav, .header__links {
     display: flex;
@@ -89,8 +100,6 @@ a {
 }
 
 .artifacts {
-  margin: 100px 70px 50px 70px;
-
   .artifacts__title {
     display: block;
     margin-bottom: 70px;
@@ -186,6 +195,7 @@ a {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     .projects__list--item {
       max-width: 30%;
@@ -233,6 +243,7 @@ a {
   .novelties__top {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     .novelties__top-button {
       background-color: var(--background-color);
@@ -310,13 +321,18 @@ a {
 
   .footer__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 80%;
     text-transform: uppercase;
     font-family: "Lato";
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
+
+    .footer__list--item {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
 
   .footer__copiright {

@@ -1,0 +1,11 @@
+@media (max-width: 1199px) {
+  .container {
+    max-width: 800px;
+  }
+  .footer__list {
+    width: 100%;
+  }
+  .footer__list .footer__list--item {
+    margin-top: 15px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
