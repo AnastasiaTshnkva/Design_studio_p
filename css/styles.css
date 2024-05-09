@@ -44,6 +44,7 @@ body {
   max-width: var(--max-width-of-container);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
 a {

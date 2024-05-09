@@ -2,6 +2,9 @@
   .container {
     max-width: 800px;
   }
+  .manifesto__main--list {
+    font-size: 30px;
+  }
   .footer__list {
     width: 100%;
   }
