@@ -101,7 +101,7 @@ img {
   margin-bottom: 70px;
   font-size: 72px;
   font-weight: 300;
-  max-width: 745px;
+  max-width: 70%;
 }
 .artifacts .artifacts__button {
   padding-top: 3px;
@@ -150,11 +150,21 @@ img {
   margin-top: 80px;
   min-width: 100%;
 }
-.manifesto .manifesto__main .manifesto__main--img--top {
+.manifesto .manifesto__main .manifesto__main--img--top, .manifesto .manifesto__main .manifesto__main--img--bottom {
   align-self: flex-start;
+  width: 250px;
 }
 .manifesto .manifesto__main .manifesto__main--img--bottom {
   align-self: flex-end;
+}
+.manifesto .manifesto__main .manifesto__main--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 100%;
+  text-align: center;
 }
 .manifesto .manifesto__button {
   margin-top: 70px;
@@ -240,8 +250,13 @@ img {
   margin-top: 40px;
 }
 .novelties .novelties__list .novelties__list--item {
-  padding-left: 10px;
-  padding-right: 10px;
+  cursor: pointer;
+  padding: 11px 11px 1px 11px;
+}
+.novelties .novelties__list .novelties__list--item:hover {
+  box-shadow: 10px 10px 10px var(--shadow-color);
+  padding: 10px 10px 0 10px;
+  border: solid 1px var(--shadow-color);
 }
 .novelties .novelties__list .novelties__list--item .novelties__list--item--name {
   font-family: "Roboto";
