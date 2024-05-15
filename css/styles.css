@@ -2,8 +2,10 @@
   --background-color: #FCFAF8;
   --text-color: #000000;
   --shadow-color: #F4EDE6;
-  --background-image: "./img/mainBaner.png";
   --hr-color:#0b080523;
+  --burgermenu-background-color: #F4EDE6;
+  --burgermenu-color: #615e5a;
+  --background-image: "./img/mainBaner.png";
   --max-width-of-container: 1100px;
 }
 
@@ -72,6 +74,9 @@ img {
   line-height: 24px;
   list-style: none;
   min-width: 35%;
+}
+.header .header__burgermenu {
+  display: none;
 }
 .header .header__nav--item, .header .header__links--item {
   cursor: pointer;
