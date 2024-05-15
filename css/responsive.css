@@ -23,4 +23,31 @@
   .footer .footer__list .footer__list--item {
     margin-top: 15px;
   }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 660px;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .main {
+    max-height: 550px;
+  }
+  .artifacts {
+    margin-top: 30px;
+  }
+  .artifacts .artifacts__title {
+    font-size: 38px;
+  }
+  .about .about__img--item {
+    max-width: 35%;
+  }
+  .manifesto .manifesto__main--list {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=responsive.css.map */
