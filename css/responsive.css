@@ -3,7 +3,7 @@
   .container {
     max-width: 800px;
   }
-  .title {
+  .title, h1 {
     font-size: 40px;
     line-height: 70px;
   }
@@ -53,6 +53,14 @@
   }
 }
 @media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .title, h1 {
+    font-size: 30px;
+    line-height: 60px;
+  }
   .container {
     max-width: 500px;
   }
@@ -95,5 +103,45 @@
     font-size: 17px;
     line-height: 10px;
     height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 300px;
+  }
+  .title, h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .button {
+    padding: 0px 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .artifacts .artifacts__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+  .about .about__img {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .about .about__img .about__img--item {
+    display: none;
+  }
+  .about .about__img .about__img--bottom {
+    display: inline-block;
+    min-width: 100%;
+    margin-top: 0;
+  }
+  .manifesto .manifesto__main {
+    justify-content: center;
+  }
+  .manifesto .manifesto__main img[class^=manifesto__main--img] {
+    display: none;
+  }
+  .manifesto .manifesto__main .manifesto__main--list {
+    max-height: 300px;
   }
 }/*# sourceMappingURL=responsive.css.map */
