@@ -64,6 +64,14 @@ img {
   width: 100%;
 }
 
+.hiden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -170,26 +178,28 @@ img {
   .manifesto__main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 80px;
-    min-width: 100%;
 
-    .manifesto__main--img--top, .manifesto__main--img--bottom {
-      align-self: flex-start;
-      width: 250px;
+    img[class^="manifesto__main--img"] {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+
+    .manifesto__main--img--top {
+      align-self: self-start;
     }
 
     .manifesto__main--img--bottom {
-      align-self: flex-end;
+      align-self: self-end;
     }
 
     .manifesto__main--list {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       margin-left: 30px;
       margin-right: 30px;
-      height: 100%;
       text-align: center;
     }
   }

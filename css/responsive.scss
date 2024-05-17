@@ -18,13 +18,12 @@
   
   .manifesto {
     .manifesto__main--list {
-      min-height: 400px;
       font-size: 41px;
       line-height: 50px;
-  
-      .manifesto__main--img--bottom, .manifesto__main--img--top {
-        width: 150px;
-      }
+    }
+
+    img[class^="manifesto__main--img"] {
+      width: 120px
     }
   }
   
@@ -67,18 +66,8 @@
   .about {
     .about__img--item {
       max-width: 33%;
-      .about__img--bottom {
-        // max-width: 40%;
-      }
     }
   }
-
-  .manifesto {
-    .manifesto__main--list {
-      font-size: 32px;
-    }
-  }
-  
 }
 
 @media (max-width: 767px) {
@@ -102,7 +91,6 @@
       display: block;
 
       .header__burgermenu--list {
-        display: none;
         min-width: 250px;
         background-color: var(--burgermenu-background-color);
         font-size: 17px;
@@ -134,16 +122,14 @@
   }
 
   .manifesto {
-    max-width: 400px;
-
     img {
       max-width: 33%;
     }
 
     .manifesto__main--list {
-      font-size: 17px;
-      line-height: 10px;
-      height: 400px;
+      display: block;
+      font-size: 14px;
+      line-height: 17px;
     }
   }
 }
@@ -190,17 +176,31 @@
   }
 
   .manifesto {
-    // max-height: 400px;
-
     .manifesto__main {
-      justify-content: center;
 
       img[class^="manifesto__main--img"] {
         display: none;
       }
 
       .manifesto__main--list {
-        max-height: 300px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+  
+  .services {
+    .services__list {
+      grid-template-columns: repeat(2, 1fr);
+      .services__list--item {
+        .services__list--item--title {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        .services__list--item--paragraf {
+          font-size: 13px;
+        }
       }
     }
   }
