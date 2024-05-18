@@ -58,12 +58,8 @@ img {
   width: 100%;
 }
 
-.hiden {
+.hidden {
   display: none;
-}
-
-.visible {
-  display: block;
 }
 
 .header {

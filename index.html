@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/responsive.css">
 
-
   <title>marta/benet</title>
 </head>
 
@@ -30,17 +29,20 @@
     <div class="header__burgermenu">
       <button class="icon-menu header__burgermenu--button burger-button"></button>
 
-      <button class="icon-cross header__burgermenu--button cross-button hiden"></button>
+      <div class="header__burgermenu--sidemenu hidden">
+        <ul class="header__burgermenu--list">
+          <li class="header__burgermenu--item"><a href="#about">ABOUT</a></li>
+          <li class="header__burgermenu--item"><a href="#manifesto">MANIFESTO</a></li>
+          <li class="header__burgermenu--item"><a href="#projects">PROJECTS</a></li>
+          <li class="header__burgermenu--item"><a href="#about">SHOP</a></li>
+          <li class="header__burgermenu--item"><a href="#about">CONTACT</a></li>
+          <li class="header__burgermenu--item"><a href="#about">IT</a></li>
+          <li class="header__burgermenu--item"><a href="#about">CART(0)</a></li>
+        </ul>
 
-      <ul class="header__burgermenu--list hiden">
-        <li class="header__burgermenu--item"><a href="#about">ABOUT</a></li>
-        <li class="header__burgermenu--item"><a href="#manifesto">MANIFESTO</a></li>
-        <li class="header__burgermenu--item"><a href="#projects">PROJECTS</a></li>
-        <li class="header__burgermenu--item"><a href="#about">SHOP</a></li>
-        <li class="header__burgermenu--item"><a href="#about">CONTACT</a></li>
-        <li class="header__burgermenu--item"><a href="#about">IT</a></li>
-        <li class="header__burgermenu--item"><a href="#about">CART(0)</a></li>
-      </ul>
+        <button class="icon-cross header__burgermenu--button cross-button"></button>
+      </div>
+      
     </div>
 
     <ul class="header__links">
@@ -219,5 +221,7 @@
       <p>Crafted by Beconcept Studio</p>
     </div>
   </footer>
+
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
